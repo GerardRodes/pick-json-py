@@ -1,0 +1,13 @@
+[package]
+name = "pick-json-py"
+version = "0.1.0"
+authors = ["Gerard Rodes <gerard.rodes@omniaccess.com>"]
+edition = "2018"
+
+[lib]
+name = "pick_json_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+cpython = { version = "0.5", features = ["extension-module"] }
+pick-json = { git = "https://github.com/GerardRodes/pick-json" }
